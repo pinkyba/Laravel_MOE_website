@@ -51,8 +51,8 @@
 					@endauth
 				</li>
 				<li class="nav-item mx-2">
-					<a href="{{route('cartPage')}}" class="single-icon">
-	                	<i class="fas fa-cart"></i>  <span class="total-count cartNoti"></span>
+					<a href="{{route('cartPage', 0)}}" class="nav-link single-icon">
+	                	<i class="fas fa-cart-plus text-info"></i><span class="total-count cartNoti">0</span>
 	                </a>
 				</li>
 			</ul>
@@ -69,4 +69,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 	<script type="text/javascript" src="{{asset('frontend_assets/custom.js')}}"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script type="text/
+	<script type="text/javascript" src="{{asset('frontend_assets/shoppingcart.js')}}"></script>
+	<!-- Animation on scroll webpage ref(https://github.com/michalsnik/aos)  -->
+	  <script>
+	    AOS.init();
+	  </script>
+</body>
+
+</html>

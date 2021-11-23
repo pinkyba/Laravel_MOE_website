@@ -1,6 +1,28 @@
 $(document).ready(function() {
 
 	showCart();
+	cartNoti();
+
+	// cart Notification
+	function cartNoti(){
+		var cart = localStorage.getItem('cart');
+
+		if(cart){
+			cartArray = JSON.parse(cart);
+			var notiCount = 0;
+
+			$.each(cartArray, function(i,v){
+				notiCount += v.qty;
+			})
+
+			$('.cartNoti').html(notiCount);
+
+		}else{
+			$('.cartNoti').html(0);
+		}
+
+		showCart();
+	}
 
 	$('.addtocartbtn').on('click', function(){
 		var id = $(this).data('id');
@@ -44,6 +66,7 @@ $(document).ready(function() {
 		localStorage.setItem('cart', cartJson);
 
 		showCart();
+		cartNoti();
 	})
 
 
@@ -131,7 +154,7 @@ $(document).ready(function() {
 		localStorage.setItem('cart', cartJson);
 
 		showCart();
-
+		cartNoti();
 	})
 
 
@@ -161,6 +184,7 @@ $(document).ready(function() {
 		localStorage.setItem('cart', cartJson);
 
 		showCart();
+		cartNoti();
 	})
 
 
@@ -183,8 +207,8 @@ $(document).ready(function() {
 		var cartJson = JSON.stringify(cartArray);
 		localStorage.setItem('cart', cartJson);
 
-		showData();
+		showCart();
 		cartNoti();
-		showShoppingItem();
 	})
+
 });

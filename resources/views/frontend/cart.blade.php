@@ -5,11 +5,11 @@
 	<div class="carousel slide" data-ride="carousel" id="Carousel">
 		<div class="carousel-inner" >
 			<div class="carousel-item active">
-				<img src="{{asset('frontend_assets/images/cart.jpg')}}" class="img-fluid w-100" style="opacity: 0.6;">					
+				<img src="{{asset('frontend_assets/images/cart.jpg')}}" class="img-fluid w-100" style="opacity: 0.8;">					
 			</div>				
 			
-			<h1 class="courseCrousel_title text-center">MOE COURSES</h1>
-			<p class="courseCrousel text-center">You can learn every where and every time</p>
+			<h1 class="courseCrousel_title text-center">Cart</h1>
+			<p class="courseCrousel text-center">You can do every where</p>
 		</div>
 		
 	</div>
@@ -19,7 +19,15 @@
 		<p class="about_text"> Cart Detail </p>
 		<hr class="hr_size"><br>
 	</div>
-
+	@if($course)
+		<div class="bg-info">
+			<div class="p-3 text-center">
+				<span class="mr-2 text-light">"{{$course->name}}" has been added to your cart</span>
+				<a href="{{route('coursePage')}}" class="btn btn-dark p-1">Continue Shopping</a>
+			</div>
+			
+		</div>
+	@endif
 	<br>
 	<!-- cart -->
 	<div class="container">

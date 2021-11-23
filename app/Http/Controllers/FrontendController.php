@@ -44,9 +44,10 @@ class FrontendController extends Controller
     }
 
     // frontend/cart.blade.php
-    public function cart($value='')
+    public function cart($id)
     {
-        return view('frontend.cart');
+        $course = Courses::find($id);
+        return view('frontend.cart',compact('course'));
     }
 
     // about page

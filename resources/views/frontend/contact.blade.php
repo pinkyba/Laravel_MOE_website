@@ -21,10 +21,10 @@
 		<div class="row">
 			<div class="col-lg-4 bg-light contact_info">
 				<h2 class="mt-4 font-weight-bold">Contact Information</h2>
-				<p class="mt-4" style="font-size: 18px; font-weight: bold;">Visit the Bloosmy Fitness & Yoga</p>
+				<p class="mt-4" style="font-size: 18px; font-weight: bold;">Visit Myanmar Online Entrepreneur</p>
 				<p class="clock mt-3">
 	        		<i class="fa fa-location-arrow mr-2" style="color: #00CED1;"></i>
-	        		<span style="font-size: 17px;">Room No. 8-A , MTP Condo, Insein Rd, Yangon, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Myanmar</span>
+	        		<span style="font-size: 17px;">Room No. 8-A , Insein Rd, Yangon, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Myanmar</span>
 	        	</p>
 	        	<p class="mt-4" style="font-size: 18px; font-weight: bold;">Message Us</p>
 				<p class="clock mt-3">

@@ -31,7 +31,7 @@
 				  <ul class="list-group list-group-flush">
 				    <li class="list-group-item text-center">Ks {{$course->price}}</li>
 				    <li class="list-group-item text-center">
-				    	<a href="{{route('cartPage')}}" class="btn btn-info addtocartbtn" data-id="{{$course->id}}" data-name="{{$course->name}}" data-price="{{$course->price}}" data-discount="{{$course->discount}}">Enroll Now</a>
+				    	<a href="{{route('cartPage', $course->id)}}" class="btn btn-info addtocartbtn" data-id="{{$course->id}}" data-name="{{$course->name}}" data-price="{{$course->price}}" data-discount="{{$course->discount}}">Enroll Now</a>
 				    </li>
 				  </ul>				  
 				</div>

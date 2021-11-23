@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Courses;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $latest_courses = Courses::orderBy('id','desc')->take(6)->get();
+
+        return view('home',compact('latest_courses'));
     }
 }

@@ -10,6 +10,19 @@
 	font-family: lobster;
 	src: url(Lobster-Regular.ttf);
 }
+.total-count {
+	position: absolute;
+	top: 18px;
+	right: 65px;
+	background: #2980b9;
+	width: 20px;
+	height: 20px;
+	line-height: 18px;
+	text-align: center;
+	color: #fff;
+	border-radius: 100%;
+	font-size: 14px;
+}
 .navbar-light{
 	width: 100%;
 	z-index: 999;

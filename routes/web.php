@@ -18,7 +18,7 @@ Route::get('course', 'FrontendController@course')->name('coursePage');
 Route::get('account', 'FrontendController@account')->name('accountPage');
 Route::get('accountInfo', 'FrontendController@accountInfo')->name('accountInfoPage');
 Route::get('course_detail/{id}', 'FrontendController@courseDetail')->name('courseDetailPage');
-Route::get('cart', 'FrontendController@cart')->name('cartPage');
+Route::get('cart/{id}', 'FrontendController@cart')->name('cartPage');
 Route::get('about', 'FrontendController@about')->name('aboutPage');
 Route::get('contact', 'FrontendController@contact')->name('contactPage');
 Route::get('book', 'FrontendController@book')->name('bookPage');
