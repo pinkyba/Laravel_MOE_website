@@ -4,6 +4,10 @@
 	<title>MOE</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{{-- ajax token --}}
+   <meta name="csrf-token" content="{{ csrf_token() }}">
+
 	<link rel="stylesheet" type="text/css" href="{{asset('frontend_assets/bootstrap/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('frontend_assets/style.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('frontend_assets/fontawesome/css/all.min.css')}}">

@@ -59,7 +59,7 @@
 						@auth
 							<a href="{{route('accountInfoPage')}}" class="btn btn-info" style="margin-left: 130px;">Proceed To Checkout</a>
 						@else
-							<a href="{{route('accountPage')}}" class="btn btn-info" style="margin-left: 130px;">Proceed To Checkout</a>
+							<a href="{{route('accountPage')}}" class="btn btn-info" style="margin-left: 130px;">Login To Checkout</a>
 						@endauth
 					</td>
 					</tr>

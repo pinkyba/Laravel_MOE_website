@@ -56,7 +56,7 @@ class CoursesController extends Controller
         $course->note = $request->note;
         $course->access = $request->access;
         $course->duration = $request->duration;
-        $course->certificate = $request->cerficate;     
+        $course->certificate = $request->certificate;     
         $course->category_id = $request->category_id;
 
         $course->save();
@@ -103,7 +103,7 @@ class CoursesController extends Controller
         $course->description = $request->description;
         $course->access = $request->access;
         $course->duration = $request->duration;
-        $course->certificate = $request->cerficate;
+        $course->certificate = $request->certificate;
         $course->note = $request->note;
         $course->category_id = $request->category_id;
 
